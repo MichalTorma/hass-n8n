@@ -41,7 +41,10 @@
     "env_vars_list": [
       "WEBHOOK_URL: http://localhost:5678"
     ],
-    "cmd_line_args": ""
+    "cmd_line_args": "",
+    "ingress": true,
+    "ingress_port": 5678,
+    "homeassistant_api": true
   },
   "schema": {
     "auth": "bool",
