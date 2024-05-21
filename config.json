@@ -33,6 +33,7 @@
   "ingress": true,
   "ingress_port": 5678,
   "homeassistant_api": true,
+  "privileged": ["NET_ADMIN"],
   "options": {
     "auth": false,
     "auth_username": "",
