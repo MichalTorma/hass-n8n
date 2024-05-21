@@ -1,6 +1,6 @@
 {
   "name": "Hass n8n",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "slug": "hass-n8n",
   "description": "Self host your n8n instance",
   "url": "https://github.com/Rbillon59/hass-n8n",
@@ -30,6 +30,9 @@
   "ports_description": {
     "5678/tcp": "n8n Web interface"
   },
+  "ingress": true,
+  "ingress_port": 5678,
+  "homeassistant_api": true,
   "options": {
     "auth": false,
     "auth_username": "",
@@ -41,10 +44,7 @@
     "env_vars_list": [
       "WEBHOOK_URL: http://localhost:5678"
     ],
-    "cmd_line_args": "",
-    "ingress": true,
-    "ingress_port": 5678,
-    "homeassistant_api": true
+    "cmd_line_args": ""
   },
   "schema": {
     "auth": "bool",
